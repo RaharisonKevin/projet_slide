@@ -1,0 +1,102 @@
+/* optimisation css. Tout en rem 5/20 */
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+/* Reset */
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font: 1.6rem "Open Sans", sans-serif;
+    margin: 0;
+    background-color: #343c40;
+}
+
+section,
+figure,
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+*,
+ ::before,
+ ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(31, 31, 31);
+}
+
+header h1 {
+    color: #fff;
+}
+
+.container {
+    max-width: 80rem;
+    max-height: 70rem;
+    margin: 0 auto;
+    padding: 10rem;
+}
+
+.slider img {
+    max-width: 100%;
+    display: none;
+}
+
+button {
+    color: black;
+    border: none;
+}
+
+img.active {
+    width: 60rem;
+    display: block;
+    animation: fade 0.8s;
+    border: solid .4rem #fff;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.cont-btn {
+    max-width: 100%;
+    height: auto;
+    background-color: #fff;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+}
+
+.btn-nav {
+    font-size: 5rem;
+    margin: 0 1.5rem;
+    cursor: pointer;
+}
